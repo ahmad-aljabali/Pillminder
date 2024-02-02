@@ -83,7 +83,9 @@ CLK - 5 [^4]
 
 We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
 
-<video src="https://drive.google.com/file/d/1VQpB1o4hJxdA-Bs6w7TGdvIl1g6psHTD/view?usp=sharing" controls title="Title"></video>
+"https://drive.google.com/file/d/1VQpB1o4hJxdA-Bs6w7TGdvIl1g6psHTD/view?usp=sharing"
+
+"screenshots/assembled%20electronics.mp4"
 
 ## Mobile App
 ### Architecture & Libraries
