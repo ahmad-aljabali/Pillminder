@@ -83,7 +83,7 @@ CLK - 5 [^4]
 
 We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
 
-<video src="App%20src%20code/vid/assembled%20electronics.mp4" controls title="Title"></video>
+<video src="screenshots/assembled%20electronics.mp4" controls title="Title"></video>
 
 ## Mobile App
 ### Architecture & Libraries
