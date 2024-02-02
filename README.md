@@ -8,7 +8,25 @@ We observed that available products in the market were either exclusively app-ba
 
 To address these shortcomings, we chose a dual-component approach for our project: a smart pill dispenser and a companion mobile app designed for medication tracking. Our vision was to create a comprehensive product that could function both independently and in sync with each other. This design allowed users the flexibility to use the dispenser on its own or utilize the app solely as a medication reminder. By providing this dual functionality, our aim was to offer a flexible and user-friendly solution, catering to a diverse range of user preferences and needs.
 
-# Design 
+# Design
+
+## Hardware
+The aim was to create a simple and compact design that can be placed and used easily. The design incorporated a rotating plate capable of storing multiple medications, facilitating dispensing according to the prescription. To enhance user interaction, a visual display feature was integrated to notify users of medication times and provide instructions.
+
+### 3D Modeling
+The design process was accomplished by:
+
+- Measure the dimensions of the main components so we can build a model that fits all the components and maintains a compact size. Precise measurements were obtained using a digital caliper.
+
+- Using Autodesk Inventor Professional, we created detailed 3D models for each part of the prototype. This design process accounted for the dispenser's functionality, accommodating six types of medication on a rotating plate.
+
+![Alt text](<img/3D Model.png>)
+
+- The next step involved bringing our 3D models to life. We utilized a Prusa i3 MK3S+ FDM printer, with a slicing size set at 0.2-0.3 mm. The final printed dimensions of the prototype were 21 x 21 x 25 cm.
+
+![Alt text](<img/3D Printing.png>)
+
+![Alt text](image-2.png)![Alt text](image.png)![Alt text](image-1.png)
 
 ## Electronics
 In this section, we will write in detail about the electronic components that are the core of our prototype. To achieve the goal of creating an automated prototype, we used an Arduino Uno microcontroller as the central processing unit. To establish a connection between the Arduino Uno and our mobile application, we integrated the ESP8266-01 Wi-Fi module. This module served as the communication bridge, enabling real-time interaction between the prototype and the user through the mobile app.
@@ -64,6 +82,8 @@ CLK - 5 [^4]
 ![Alt text](img/image-7.png)
 
 We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
+
+<video src="vid/20240119_201748.mp4" controls title="Title"></video>
 
 ## Mobile App
 ### Architecture & Libraries
