@@ -4,6 +4,9 @@ Medication Tracker App and Dispenser.
 # Table of Contents
 1. [Introduction](#Introduction)
 2. [Design](#Design)
+   1. [Hardware](#hardware)
+   2. [Electronics](#electronics)
+   3. [Mobile App](#app)
 3. [Building the App](#Building)
 4. [Issues and Challanges](#Issues)
 5. [Conclusion & Future Works](#Conclusion)
@@ -24,7 +27,7 @@ https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9
 
 # Design <a name=Design></a>
 
-## Hardware
+## Hardware <a name="hardware"></a>
 The aim was to create a simple and compact design that can be placed and used easily. The design incorporated a rotating plate capable of storing multiple medications, facilitating dispensing according to the prescription. To enhance user interaction, a visual display feature was integrated to notify users of medication times and provide instructions.
 
 ![Alt text](<img/Full assembly.jpg>)
@@ -44,7 +47,7 @@ The design process was accomplished by:
 
 ![Alt text](<img/printed components.png>)
 
-## Electronics
+## Electronics <a name="electronics"></a>
 In this section, we will write in detail about the electronic components that are the core of our prototype. To achieve the goal of creating an automated prototype, we used an Arduino Uno microcontroller as the central processing unit. To establish a connection between the Arduino Uno and our mobile application, we integrated the ESP8266-01 Wi-Fi module. This module served as the communication bridge, enabling real-time interaction between the prototype and the user through the mobile app.
 
 ### Electronic Component:
@@ -110,7 +113,7 @@ We only proceeded to integrate all components once we confirmed that each one wa
 
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/dc6bbddc-dbca-42d1-aa9b-e82a9cc1dbc5
 
-## Mobile App
+## Mobile App <a name="app"></a>
 ### Architecture & Libraries
 The app was develop with the goal of being usable as a standalone medicine tracking mobile app and/or in combination with the Dispenser.
 
