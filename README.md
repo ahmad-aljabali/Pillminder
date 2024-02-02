@@ -2,17 +2,17 @@
 Medication Tracker App and Dispenser.
 
 # Table of Contents
-1. [Introduction](#Introduction)
-2. [Design](#Design)
+1. [Introduction](#introduction)
+2. [Design](#design)
    1. [Hardware](#hardware)
    2. [Electronics](#electronics)
    3. [Mobile App](#app)
-3. [Building the App](#Building)
-4. [Issues and Challanges](#Issues)
-5. [Conclusion & Future Works](#Conclusion)
-6. [References](#References)
+3. [Building the App](#building)
+4. [Issues and Challanges](#issues)
+5. [Conclusion & Future Works](#conclusion)
+6. [References](#references)
 
-# Introduction <a name=Introduction></a>
+# Introduction <a name=introduction></a>
 In this project, our aim was to develop an inventive solution for monitoring and managing resources vital to an individual's well-being, with a specific focus on medications. Our initial market research highlighted areas for improvement in existing solutions.
 
 We observed that available products in the market were either exclusively app-based or hardware-based. The existing dispensers were often proprietary, offering limited customization options, featuring bulky designs, and were not tailored to meet the needs of individual users.
@@ -25,7 +25,7 @@ https://github.com/ahmad-aljabali/Pillwise/assets/36141448/d999e439-b2e4-46c4-b8
 
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a  
 
-# Design <a name=Design></a>
+# Design <a name=design></a>
 
 ## Hardware <a name="hardware"></a>
 The aim was to create a simple and compact design that can be placed and used easily. The design incorporated a rotating plate capable of storing multiple medications, facilitating dispensing according to the prescription. To enhance user interaction, a visual display feature was integrated to notify users of medication times and provide instructions.
@@ -157,7 +157,7 @@ Additionally the following screens are available.
 - Shows complete medication info
 
 
-# Building the App <a name=Building></a>
+# Building the App <a name=building></a>
 To build the App from the available source code [^7] use the below instructions.
 
 ### Install Dependencies
@@ -177,7 +177,7 @@ ionic cap build android
 **_Then build using android studio_**
 **_Replace android with ios and use Xcode to build for ios_**
 
-# Issues and Challanges <a name=Issues></a>
+# Issues and Challanges <a name=issues></a>
 Our initial microcontroller choice was Raspberry Pi, because of its communication capabilities and the ease of hosting a local server.
 
 Unfortunately, the Raspberry Pi unexpectedly ceased functioning, causing the need for an alternative solution. The simplest idea was to buy another Raspberry Pi, but out limited budget led us to look for a more affordable solution. Since most of us were familiar with Arduino Uno, we decided to use it as our microcontroller. 
@@ -186,12 +186,12 @@ We knew that Arduino Uno does not have built-in Wi-Fi, we solved this limitation
 
 This method worked well, but it required alot of effort to handel and parse incoming command, due to lack of libraries to handel requests for this module.
 
-# Conclusion & Future Works <a name=Conclusion></a>
+# Conclusion & Future Works <a name=conclusion></a>
 Our project began with a basic idea: creating a prototype for a medical dispenser paired with a mobile app. We simultaneously worked on prototyping, 3D modeling, Arduino Uno code, and mobile app. Despite facing various challenges, we successfully integrated the dispenser prototype with the mobile app, simplifying medication tracking for users.
 
 Looking ahead, the design may be improved by enhancing user-friendliness. This involves implementing a database of nearby pharmacies with specific medicines and introducing a scanning feature for users to easily input medication details into the app. These improvements will  provide users with a more intuitive and efficient medication management experience.
 
-# References <a name=References></a>
+# References <a name=references></a>
 [^1]: https://www.electronics-lab.com/project/using-st7735-1-8-color-tft-display-arduino/
 [^2]: https://gndtovcc.home.blog/2020/02/11/code-for-obtaining-ip-address-from-esp-01/
 [^3]: https://www.makerguides.com/servo-arduino-tutorial/
