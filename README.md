@@ -1,5 +1,5 @@
 # Pillminder
-Medication Tracker App and Dispenser.
+Medication Dispenser and Tracker App. [Download apk](Build/Pillwise.apk)
 
 # Table of Contents
 1. [Introduction](#introduction)
@@ -178,6 +178,14 @@ ionic cap build android
 **_Replace android with ios and use Xcode to build for ios_**
 
 # Issues and Challanges <a name=issues></a>
+The 3D printer's dimensions posed a challenge as they were smaller than the model dimensions. Consequently, we divided the case into two parts one for internal components and another for the LCD and encoder. 
+
+Securing all components proved challenging, especially when considering the rotating plate where precision was crucial. The plate needed to be affixed with a glued gear, ensuring contact with the servo but not overly tight. Excessive tightness could hinder the servo motor's smooth rotation, leading to potential interruptions. 
+
+Addressing this challenge would require creating a new model with more accurate dimensions and improved fixation points, resolving potential issues related to plate movement and servo rotation.
+
+However, due to time limitations and restricted access to the printing lab, this optimization was not implemented.
+
 Our initial microcontroller choice was Raspberry Pi, because of its communication capabilities and the ease of hosting a local server.
 
 Unfortunately, the Raspberry Pi unexpectedly ceased functioning, causing the need for an alternative solution. The simplest idea was to buy another Raspberry Pi, but out limited budget led us to look for a more affordable solution. Since most of us were familiar with Arduino Uno, we decided to use it as our microcontroller. 
