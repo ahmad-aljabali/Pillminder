@@ -1,4 +1,4 @@
-# Pillwise
+# Pillminder
 Medication Tracker App and Dispenser.
 
 # Introduction
@@ -7,6 +7,12 @@ In this project, our aim was to develop an inventive solution for monitoring and
 We observed that available products in the market were either exclusively app-based or hardware-based. The existing dispensers were often proprietary, offering limited customization options, featuring bulky designs, and were not tailored to meet the needs of individual users.
 
 To address these shortcomings, we chose a dual-component approach for our project: a smart pill dispenser and a companion mobile app designed for medication tracking. Our vision was to create a comprehensive product that could function both independently and in sync with each other. This design allowed users the flexibility to use the dispenser on its own or utilize the app solely as a medication reminder. By providing this dual functionality, our aim was to offer a flexible and user-friendly solution, catering to a diverse range of user preferences and needs.
+
+## Videos
+
+https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a | https://github.com/ahmad-aljabali/Pillwise/assets/36141448/d999e439-b2e4-46c4-b8eb-4feb8e34578a
+---|---
+
 
 # Design
 
