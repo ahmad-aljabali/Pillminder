@@ -83,7 +83,7 @@ CLK - 5 [^4]
 
 We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
 
-<video src="screenshots/assembled%20electronics.mp4" controls title="Title"></video>
+<video src="https://drive.google.com/file/d/1VQpB1o4hJxdA-Bs6w7TGdvIl1g6psHTD/view?usp=sharing" controls title="Title"></video>
 
 ## Mobile App
 ### Architecture & Libraries
@@ -157,7 +157,7 @@ We knew that Arduino Uno does not have built-in Wi-Fi, we solved this limitation
 
 This method worked well, but it required alot of effort to handel and parse incoming command, due to lack of libraries to handel requests for this module.
 
-# Conclusion & Feuture Works
+# Conclusion & Future Works
 Our project began with a basic idea: creating a prototype for a medical dispenser paired with a mobile app. We simultaneously worked on prototyping, 3D modeling, Arduino Uno code, and mobile app. Despite facing various challenges, we successfully integrated the dispenser prototype with the mobile app, simplifying medication tracking for users.
 
 Looking ahead, the design may be improved by enhancing user-friendliness. This involves implementing a database of nearby pharmacies with specific medicines and introducing a scanning feature for users to easily input medication details into the app. These improvements will  provide users with a more intuitive and efficient medication management experience.
