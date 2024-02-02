@@ -1,7 +1,15 @@
 # Pillminder
 Medication Tracker App and Dispenser.
 
-# Introduction
+# Table of Contents
+1. [Introduction](#Introduction)
+2. [Design](#Design)
+3. [Building the App](#Building)
+4. [Issues and Challanges](#Issues)
+5. [Conclusion & Future Works](#Conclusion)
+6. [References](#References)
+
+# Introduction <a name=Introduction></a>
 In this project, our aim was to develop an inventive solution for monitoring and managing resources vital to an individual's well-being, with a specific focus on medications. Our initial market research highlighted areas for improvement in existing solutions.
 
 We observed that available products in the market were either exclusively app-based or hardware-based. The existing dispensers were often proprietary, offering limited customization options, featuring bulky designs, and were not tailored to meet the needs of individual users.
@@ -10,55 +18,11 @@ To address these shortcomings, we chose a dual-component approach for our projec
 
 ## Videos
 
-https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a  
-
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/d999e439-b2e4-46c4-b8eb-4feb8e34578a
 
+https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a  
 
-# Design
-
-## Mobile App
-### Architecture & Libraries
-The app was develop with the goal of being usable as a standalone medicine tracking mobile app and/or in combination with the Dispenser.
-
-Another design consideration was to use cross platform technologies, we settled in the end on using React single page PWA framework because of our prior familiarity with web development, this was used in combination with Ionic and Capacitor to add native app functionality.
-
-For management of native functionality the following capacitor add-ons were utilized:
-- Filesystem[^5]: for storing and reading user data locally 
-- Local Notification[^6]: to provide push notification to user
-
-For ease of development and quick modification the user data is stored in JSON format instead of using a dedicated database, saved in the standard native Android file structure.
-
-### Layout
-The app is split into three main screens, each displaying the following.
-![Alt text](screenshots/1.jpg)|![Alt text](screenshots/2.jpg)|![Alt text](screenshots/3.jpg)|![Alt text](screenshots/4.jpg)|![Alt text](screenshots/5.jpg)
----|---|---|---|---
-
-**Today**
-- Medication Name, Dose, Type
-- Times to be taken today
-- Slot if they're stored in Dispenser
-- Allow user to Confirm or Skip medicine
-
-**History**
-- Status Record of Medication in previous days
-
-**Prescriptions**
-- Active Prescriptions
-- Current stock value
-- Button to add new prescription
-
-Additionally the following screens are available.
-
-**Add New Treatment**
-- Form to Add New Medication
-- Name, Dose, Type, Rate, Start Date & Time
-- Inventory Info
-- Prescription and Doctor Info
-
-**Medicine Details**
-- Can be accessed by clicking on Medication in Prescriptions Screen
-- Shows complete medication info
+# Design <a name=Design></a>
 
 ## Hardware
 The aim was to create a simple and compact design that can be placed and used easily. The design incorporated a rotating plate capable of storing multiple medications, facilitating dispensing according to the prescription. To enhance user interaction, a visual display feature was integrated to notify users of medication times and provide instructions.
@@ -85,11 +49,11 @@ In this section, we will write in detail about the electronic components that ar
 
 ### Electronic Component:
 - Arduino Uno
-- ESP8266-01
-- Servo motor
-- Encoder 
-- LCD 
-- Wires 
+- WiFi ESP8266-01S
+- Servo Motor MF-90
+- Rotary Encoder KY-040
+- LCD 1.8" TFT Display ST7735S
+- Wires & Breadboard
 
 After having every component , we started to verified the functionality of them before integrating into the overall electronic system.
 
@@ -146,7 +110,51 @@ We only proceeded to integrate all components once we confirmed that each one wa
 
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/dc6bbddc-dbca-42d1-aa9b-e82a9cc1dbc5
 
-# Building the App
+## Mobile App
+### Architecture & Libraries
+The app was develop with the goal of being usable as a standalone medicine tracking mobile app and/or in combination with the Dispenser.
+
+Another design consideration was to use cross platform technologies, we settled in the end on using React single page PWA framework because of our prior familiarity with web development, this was used in combination with Ionic and Capacitor to add native app functionality.
+
+For management of native functionality the following capacitor add-ons were utilized:
+- Filesystem[^5]: for storing and reading user data locally 
+- Local Notification[^6]: to provide push notification to user
+
+For ease of development and quick modification the user data is stored in JSON format instead of using a dedicated database, saved in the standard native Android file structure.
+
+### Layout
+The app is split into three main screens, each displaying the following.
+![Alt text](screenshots/1.jpg)|![Alt text](screenshots/2.jpg)|![Alt text](screenshots/3.jpg)|![Alt text](screenshots/4.jpg)|![Alt text](screenshots/5.jpg)
+---|---|---|---|---
+
+**Today**
+- Medication Name, Dose, Type
+- Times to be taken today
+- Slot if they're stored in Dispenser
+- Allow user to Confirm or Skip medicine
+
+**History**
+- Status Record of Medication in previous days
+
+**Prescriptions**
+- Active Prescriptions
+- Current stock value
+- Button to add new prescription
+
+Additionally the following screens are available.
+
+**Add New Treatment**
+- Form to Add New Medication
+- Name, Dose, Type, Rate, Start Date & Time
+- Inventory Info
+- Prescription and Doctor Info
+
+**Medicine Details**
+- Can be accessed by clicking on Medication in Prescriptions Screen
+- Shows complete medication info
+
+
+# Building the App <a name=Building></a>
 To build the App from the available source code [^7] use the below instructions.
 
 ### Install Dependencies
@@ -166,7 +174,7 @@ ionic cap build android
 **_Then build using android studio_**
 **_Replace android with ios and use Xcode to build for ios_**
 
-# Issues and Challanges
+# Issues and Challanges <a name=Issues></a>
 Our initial microcontroller choice was Raspberry Pi, because of its communication capabilities and the ease of hosting a local server.
 
 Unfortunately, the Raspberry Pi unexpectedly ceased functioning, causing the need for an alternative solution. The simplest idea was to buy another Raspberry Pi, but out limited budget led us to look for a more affordable solution. Since most of us were familiar with Arduino Uno, we decided to use it as our microcontroller. 
@@ -175,12 +183,12 @@ We knew that Arduino Uno does not have built-in Wi-Fi, we solved this limitation
 
 This method worked well, but it required alot of effort to handel and parse incoming command, due to lack of libraries to handel requests for this module.
 
-# Conclusion & Future Works
+# Conclusion & Future Works <a name=Conclusion></a>
 Our project began with a basic idea: creating a prototype for a medical dispenser paired with a mobile app. We simultaneously worked on prototyping, 3D modeling, Arduino Uno code, and mobile app. Despite facing various challenges, we successfully integrated the dispenser prototype with the mobile app, simplifying medication tracking for users.
 
 Looking ahead, the design may be improved by enhancing user-friendliness. This involves implementing a database of nearby pharmacies with specific medicines and introducing a scanning feature for users to easily input medication details into the app. These improvements will  provide users with a more intuitive and efficient medication management experience.
 
-# References
+# References <a name=References></a>
 [^1]: https://www.electronics-lab.com/project/using-st7735-1-8-color-tft-display-arduino/
 [^2]: https://gndtovcc.home.blog/2020/02/11/code-for-obtaining-ip-address-from-esp-01/
 [^3]: https://www.makerguides.com/servo-arduino-tutorial/
