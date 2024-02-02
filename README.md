@@ -32,7 +32,7 @@ The aim was to create a simple and compact design that can be placed and used ea
 
 ![Alt text](<img/Full assembly.jpg>)
 
-### 3D Modeling
+### 3D Modeling & Printing
 The design process was accomplished by:
 
 - Measure the dimensions of the main components so we can build a model that fits all the components and maintains a compact size. Precise measurements were obtained using a digital caliper.
@@ -177,6 +177,9 @@ ionic cap build android
 **_Replace android with ios and use Xcode to build for ios_**
 
 # Issues and Challanges <a name=issues></a>
+
+## 3D Printing
+
 The 3D printer's dimensions posed a challenge as they were smaller than the model dimensions. Consequently, we divided the case into two parts one for internal components and another for the LCD and encoder. 
 
 Securing all components proved challenging, especially when considering the rotating plate where precision was crucial. The plate needed to be affixed with a glued gear, ensuring contact with the servo but not overly tight. Excessive tightness could hinder the servo motor's smooth rotation, leading to potential interruptions. 
@@ -184,6 +187,8 @@ Securing all components proved challenging, especially when considering the rota
 Addressing this challenge would require creating a new model with more accurate dimensions and improved fixation points, resolving potential issues related to plate movement and servo rotation.
 
 However, due to time limitations and restricted access to the printing lab, this optimization was not implemented.
+
+## Electronics
 
 Our initial microcontroller choice was Raspberry Pi, because of its communication capabilities and the ease of hosting a local server.
 
