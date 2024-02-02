@@ -83,7 +83,7 @@ CLK - 5 [^4]
 
 We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
 
-<video src="screenshots/assembled%20electronics.mp4" controls title="Title"></video>
+https://github.com/ahmad-aljabali/Pillwise/assets/36141448/dc6bbddc-dbca-42d1-aa9b-e82a9cc1dbc5
 
 ## Mobile App
 ### Architecture & Libraries
