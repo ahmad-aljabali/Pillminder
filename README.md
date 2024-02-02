@@ -4,11 +4,11 @@ Medication Dispenser and Tracker App. [Download apk](Build/Pillwise.apk)
 # Table of Contents
 1. [Introduction](#introduction)
 2. [Design](#design)
-   1. [Hardware](#hardware)
-   2. [Electronics](#electronics)
-   3. [Mobile App](#app)
+1. [Hardware](#hardware)
+2. [Electronics](#electronics)
+3. [Mobile App](#app)
 3. [Building the App](#building)
-4. [Issues and Challanges](#issues)
+4. [Issues and Challenges](#issues)
 5. [Conclusion & Future Works](#conclusion)
 6. [References](#references)
 
@@ -23,7 +23,7 @@ To address these shortcomings, we chose a dual-component approach for our projec
 
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/d999e439-b2e4-46c4-b8eb-4feb8e34578a
 
-https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a  
+https://github.com/ahmad-aljabali/Pillwise/assets/36141448/cecf2776-79e3-4c20-b9d0-7685703d312a 
 
 # Design <a name=design></a>
 
@@ -156,7 +156,6 @@ Additionally the following screens are available.
 - Can be accessed by clicking on Medication in Prescriptions Screen
 - Shows complete medication info
 
-
 # Building the App <a name=building></a>
 To build the App from the available source code [^7] use the below instructions.
 
@@ -192,12 +191,12 @@ Unfortunately, the Raspberry Pi unexpectedly ceased functioning, causing the nee
 
 We knew that Arduino Uno does not have built-in Wi-Fi, we solved this limitation by adding the ESP8266-01 module. This decision was influenced by the compact size of the ESP8266-01, which fit with the dimensions of our pre-existing 3D printed model. Despite the ESP8266-01's benefits, we faced some challenges due to its basic low level functionality, forcing us to use "_AT Commands_" instead of standard libraries. 
 
-This method worked well, but it required alot of effort to handel and parse incoming command, due to lack of libraries to handel requests for this module.
+This method worked well, but it required a lot of effort to handel and parse incoming command, due to lack of libraries to handel requests for this module.
 
 # Conclusion & Future Works <a name=conclusion></a>
 Our project began with a basic idea: creating a prototype for a medical dispenser paired with a mobile app. We simultaneously worked on prototyping, 3D modeling, Arduino Uno code, and mobile app. Despite facing various challenges, we successfully integrated the dispenser prototype with the mobile app, simplifying medication tracking for users.
 
-Looking ahead, the design may be improved by enhancing user-friendliness. This involves implementing a database of nearby pharmacies with specific medicines and introducing a scanning feature for users to easily input medication details into the app. These improvements will  provide users with a more intuitive and efficient medication management experience.
+Looking ahead, the design may be improved by enhancing user-friendliness. This involves implementing a database of nearby pharmacies with specific medicines and introducing a scanning feature for users to easily input medication details into the app. These improvements will provide users with a more intuitive and efficient medication management experience.
 
 # References <a name=references></a>
 [^1]: https://www.electronics-lab.com/project/using-st7735-1-8-color-tft-display-arduino/
