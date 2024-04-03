@@ -60,57 +60,6 @@ In this section, we will write in detail about the electronic components that ar
 
 After having every component , we started to verified the functionality of them before integrating into the overall electronic system.
 
-The schematic of LCD with Arduino.
-
-![Alt text](img/image-1.png)
-
-LED - 3.3v
-SCK - 13
-SDA - 11
-DC - 9
-Reset - 8
-CS - 10
-GND - GND
-VCC - 5v [^1]
-
-![Alt text](img/image-8.png)
-
-The schematic of ESP 8266-01 with Arduino.
-
-![Alt text](img/image-2.png)
-
-GND-GND
-VCC-3.3V
-TX-3
-RX-2
-CH_PD-3.3V [^2]
-
-![Alt text](img/image-4.png)
-
-The schematic of Servo Motor with Arduino.
-
-![Alt text](img/image-5.png)
-
-GND-GND
-VCC-5V
-Control_Pin-9 [^3]
-
-![Alt text](img/image-9.png)
-
-The schematic of Encoder with Arduino.
-
-![Alt text](img/image-6.png)
-
-GND - GND
-VCC - 5v
-SW - 3
-DT - 4
-CLK - 5 [^4]
-
-![Alt text](img/image-7.png)
-
-We only proceeded to integrate all components once we confirmed that each one was functioning as expected.
-
 https://github.com/ahmad-aljabali/Pillwise/assets/36141448/dc6bbddc-dbca-42d1-aa9b-e82a9cc1dbc5
 
 ## Mobile App <a name="app"></a>
